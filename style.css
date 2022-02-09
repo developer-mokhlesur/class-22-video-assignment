@@ -1,0 +1,558 @@
+/*** Nessesary CSS Start From Here***/
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+img{
+    max-width: 100%;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.text-start{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-end{
+    text-align: right;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+} */
+/*** Nessesary CSS End Here***/
+body,
+h1,h2,h3,h4,h5,h6,span,p,a,{
+    font-family: 'Work Sans', sans-serif;
+}
+/*** Start Header Section ***/
+
+.nav img{
+    width: 50px;
+}
+.header .nav span {
+	margin-top: 7px;
+	margin-left: 10px;
+	font-weight: 600;
+    transition: 0.2s;
+}
+.header .nav span:hover{
+    color: #ccc;
+}
+.header .header-btn a {
+	display: inline-block;
+	text-decoration: none;
+	border: 2px solid #6278df;
+	color: #6278df !important;
+	padding: 8px 30px;
+	border-radius: 6px;
+	font-weight: 600;
+    transition: 0.3s;
+}
+.header .header-btn a:hover{
+    color: #fff !important;
+    background:#6278df;
+    border: 2px solid #6278df;
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+/*** End Header Section ***/
+/*** Start Slider Section ***/
+.slider{
+    background: url(./img/mbr-10.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 120px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+.slider .slider-text p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.slider .slider-text h2 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 500;
+	padding-top: 2rem;
+}
+.slider .slider-text .email {
+	margin-right: -100px;
+	padding: 12px;
+	border-radius: 5px;
+	outline: none;
+	border: 1px solid transparent;
+}
+.slider .slider-text .email:focus{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    border: 1px solid #6278df;
+}
+.slider .slider-text .sent {
+	padding: 12px;
+	outline: none;
+	border-radius: 5px;
+	font-weight: 700;
+	background: #5ba533;
+	color: #fff;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+.slider .slider-text .sent:hover{
+    box-shadow: 3px 3px 27px -3px #6278df;
+    color: #6278df !important;
+    background: #fff;
+    border: 1px solid #5ba533;
+}
+/*** End Slider Section ***/
+/*** Start  Skill Section ***/
+.skill h3 {
+	font-size: 3.6rem;
+	line-height: 1.1;
+	font-weight: 600;
+}
+.skill p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #767676;
+	padding-top: 0.5rem;
+}
+/*** End  Skill Section ***/
+/*** About Section Start ***/
+.about{
+    background: #f7f9ff;
+}
+.about img{
+    width: 90%;
+    border-radius: 5px;
+}
+.about h2 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 500;
+}
+.about p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	color: #232323;
+	font-weight: 400;
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+	width: 89%;
+	text-align: justify;
+}
+/*** About Section End ***/
+/*** Start Application Section ***/
+.app-items{
+    height: 300px;
+}
+.app h2 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 400;
+	padding-bottom: 1.5rem;
+	padding-top: 0.5rem;
+}
+.app p {
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-weight: 300;
+	padding-bottom: 3rem;
+}
+.left-img {
+	width: 50%;
+	overflow: hidden;
+	border-radius: 5px 0 0 5px;
+}
+.left-img img {
+	width: 278px;
+	height: 100%;
+	max-width: inherit;
+	position: relative;
+	top: 0px;
+	left: -77px;
+}
+.right-text{
+    width: 50%;
+
+}
+.right-text h3 {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.right-text p{
+    font-size: 1rem;
+    line-height: 1.4;
+    padding-top:0.5rem ;
+    color: #767676;
+    font-weight: 300;
+    
+}
+/*** End Application Section ***/
+/*** Start Portfolio Section ***/
+.portfolio h2{
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 400;
+	padding-bottom: 1.5rem;
+}
+.portfolio-item  img{
+	max-width: 100%;
+}
+.portfolio-item{
+	position: relative !important;
+	cursor: pointer;
+}
+.portfolio-item::after{
+	content: "";
+	position:absolute !important;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(127, 145, 225, 0.5) !important;
+	transition: 0.6s;
+	visibility: hidden;
+	opacity: 0;
+}
+.portfolio-item:hover::after{
+	visibility: visible;
+	opacity: 1;
+}
+/*** End Portfolio Section ***/
+/*** Start Service Section ***/
+.service{
+	background: #f7f9ff;
+
+}
+.service .container{
+	width: 1000px !important;
+	max-width: 100% !important;
+	margin: 0 auto;
+}
+.service-box{
+	background: #fff;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.service-box ul li {
+	list-style: none;
+	line-height: 45px;
+	font-size: 1.3rem;
+	font-weight: 300;
+	color: #767676;
+}
+.service-box h3 {
+	font-size: 2.8rem;
+	line-height: 1.4;
+	font-weight: 500;
+	padding-left: 36px;
+	margin-top: 21px;
+}
+.service-box p {
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #767676;
+	padding-left: 35px;
+	margin-top: 16px;
+}
+.service-box span {
+	color: #6278df;
+	display: inline-block;
+	width: 45px;
+}
+.service-box .ser-btn a {
+	background: #fff;
+	color: #6278df !important;
+	display: inline-block;
+	text-decoration: none;
+	padding: 17px 30px;
+	border-radius: 6px;
+	font-size: 1.3rem;
+	line-height: 1.5;
+	font-weight: 600;
+	transition: 0.5s;
+}
+.service-box:hover .ser-btn a{
+	background: #6278df;
+	color: #fff !important;
+}
+.service-box .ser-btn a:hover{
+	background: black;
+	color: #fff !important;
+}
+/*** End Service Section ***/
+/*** Start User Section ***/
+.user h6 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #767676;
+    padding-bottom: 1rem;
+    padding-top: 20px;
+}
+.user h2 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-bottom: 50px;
+	position: relative;
+}
+.user h2::after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    top: 30px;
+    left: 594px;
+    opacity: 0.1;
+    font-size: 95px;
+}
+.user p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.user img {
+    width: 80px;
+    position: relative;
+    top: 0;
+    left: 252px;
+}
+.user .bio {
+    position: relative;
+    top: 17px;
+    left: -301px;
+}
+.user .bio h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.user .bio p {
+    color: #767676;
+    font-size: 1rem;
+    margin-top: -15px;
+	font-weight: 400;
+}
+/*** End User Section ***/
+/*** Start Team Section ***/
+.team{
+	background: #f7f9ff;
+}
+.team h2 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.team .para-1 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    width: 90%;
+}
+.team .para-2 {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+.card-box {
+    margin-top: 85px;
+	background: #fff;
+}
+.card-title{
+	margin-top: -56px;
+}
+.card-title h3 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.card-subtitle h5 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.card-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+    padding-top: 1rem;
+    color: #767676;
+    font-weight: 300;
+}
+.box-img img {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 30%);
+    position: relative;
+    top: -80px;
+    left: -10px;
+}
+.card-box .team-btn {
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 6px;
+	transition: 0.4s;
+	margin-top: 10px;
+}
+.card-box .team-btn:hover{
+	background:black;
+	color: #fff;
+}
+/*** End Team Section ***/
+/*** Start Contact Section ***/
+.contact-text p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    color: #767676;
+}
+.contact-text h2 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+input {
+    border: 1px solid #ddd;
+    outline: none;
+	font-weight: 300;
+	color: #767676;
+}
+input:focus{
+	border: 1px solid #6278df;
+	box-shadow: 3px 3px 27px -3px #6278df;
+}
+textarea {
+    border: 1px solid #ddd;
+    outline: none;
+	font-weight: 300;
+	color: #767676;
+}
+textarea:focus{
+	border: 1px solid #6278df;
+	box-shadow: 3px 3px 27px -3px #6278df;
+}
+.contact-form .contact-btn button {
+    display: inline-block;
+    padding: 13px 46px;
+    border-radius: 6px;
+    background:#6278df;
+    outline: none;
+    border: 2px solid #6278df;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffffff;
+	transition: 0.5s;
+}
+.contact-form .contact-btn button:hover{
+	background: #fff;
+	color: #6278df;
+	box-shadow: 3px 3px 27px -3px #6278df;
+
+}
+/*** End Contact Section ***/
+/*** Start Button Section ***/
+.button img{
+	width: 50%;
+}
+.button .btn-text p {
+    font-size: 1.6rem;
+    color: #767676;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
+.button .btn-text h2 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.button .btn-text .btn-1 {
+    text-decoration: none;
+    display: inline-block;
+    color: #5ba533;
+    border: 2px solid #5ba533;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 10px;
+	transition: 0.5s;
+	background: #fff;
+}
+.button .btn-text .btn-1:hover{
+	border: 2px solid #5ba533;
+	background: #5ba533 !important;
+	color: #fff !important;
+	
+}
+.button .btn-text .btn-2{
+	text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #5ba533;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    font-weight: 600;
+    margin: 40px 10px;
+	transition: 0.5s;
+	background: #5ba533;
+}
+.button .btn-text .btn-2:hover{
+	background: black;
+	color: #fff;
+	border: 2px solid black;
+}
+/*** End Button Section ***/
+/*** Start Footer Section ***/
+footer{
+	background: #f7f9ff;
+}
+footer p{
+	font-size: 1.3rem;
+	line-height: 1.4;
+	color: #000;
+}
+/*** End Footer Section ***/
